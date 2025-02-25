@@ -15,7 +15,7 @@ export default function Home (): React.JSX.Element {
           {
             Array.from({ length: 25 }, (_, i) => i + 1).map((num) => {
               return (
-                <li>
+                <li key={num}>
                   <Link href={`/dynamic-routes/${num}`}>
                     Dynamic Route {num}
                   </Link>
